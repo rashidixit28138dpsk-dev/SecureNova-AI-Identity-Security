@@ -1,0 +1,6 @@
+define flow secure input guardrail
+  $allowed = execute secure_input_guardrail
+
+  if not $allowed
+    bot refuse to respond
+    stop
